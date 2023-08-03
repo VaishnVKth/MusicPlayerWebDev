@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicophile - Music for Everyone</title>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css"> /
+
+    <!-- INTERNAL CSS -->
+    <style>
+       body{
+        background-color:  rgb(7 6 6 / 90%);
+        
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo3.jpeg" alt="Musicophile" style="border-radius: 50%;">Musicophile</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="songList">
+            
+            <!-- INLINE CSS is used in h1 tag -->
+            <h1 style="
+            font-size: 74px;
+            font-family: 'Ubuntu', sans-serif;">Liked Songs</h1>
+            <div class="songitemContainer">
+                <div class="songItem">
+                    <img src="covers\LY.jpg" alt="1"  width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="truth.html">The Truth Untold</a> </span>
+                    <span class="songListPlay"><span class="timestamp">4:02 </span><span><i id="0" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers\BE.jpg" alt="1"  width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="bg.html">Blue & Grey</a></span>
+                    <span class="songListPlay"><span class="timestamp">4:14 </span><span><i id="1" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">            
+                    <img src="covers\mapofthesoul.jpg" alt="1"  width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="zero.html">00:00 (Zero O'Clock)</a></span>
+                    <span class="songListPlay"><span class="timestamp">4:10 </span><span><i id="2" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers\wings.jpg" alt="1"  width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="bst.html">Blood Sweat & Tears</a></span>
+                    <span class="songListPlay"><span class="timestamp">3:37 </span><span><i id="3" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers\LY.jpg" alt="1" width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="fake.html">Fake Love</a></span>
+                    <span class="songListPlay"><span class="timestamp">4:02 </span><span><i id="4" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers\mapofthesoul.jpg" alt="1">
+                    <span class="songTitle"><a href="bs.html">Black Swan</a></span>
+                    <span class="songListPlay"><span class="timestamp">3:18 </span><span><i id="5" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers\BE.jpg" alt="1"  width="34px" margin-left="10px" border-radius: 2px>
+                    <span class="songTitle"><a href="lgo.html">Life Goes On</a></span>
+                    <span class="songListPlay"><span class="timestamp">3:27 </span><span><i id="6" class="fa-sharp songItemPlay fa-solid fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+                  
+            
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+                
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" title="seek">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-forward-step" id="next"></i>
+            <i class="fa-solid fa-repeat"></i>
+        </div>
+        <div class="songInfo" style="margin-bottom: 18px; " >
+            <img src="music.gif" width="42px" id="gif" alt="gif"> <span id="masterSongName">The Truth Untoald</span>
+        </div>
+        
+        
+    </div>
+    <script src="https://kit.fontawesome.com/d9431694f6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

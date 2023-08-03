@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+body{
+    /* background-color: rgb(105, 73, 106); */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(234, 181, 254);
+    background-color: transparent;
+    text-decoration: none;
+  }
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 0px;
+    margin-top: -19px;
+    margin-bottom: 30px;
+}
+nav ul{
+    
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 0vh;
+    background-color:rgb(60, 12, 61);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+    margin-right: 143px;
+    border-radius: 10px;
+    padding: 34px;
+}
+
+.songitemContainer{
+    margin-top: 70px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    border-radius: 5px;
+    margin: 12px 0;
+    justify-content: space-between;
+}
+
+
+.songItem .songTitle{
+   margin-left: 10px;
+}
+.songItem .timestamp{
+    margin-left: 600px;
+    margin-right: 10px;
+
+}
+.songItem .songListPlay{
+    margin-right: 10px;
+}
+.songItem img{
+    border-radius: 2px;
+    width: 34px;
+    margin-left: 10px;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: rgb(187, 184, 184);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom.icons a{
+    color: rgb(126, 129, 129);
+}
+.bottom .icons a:hover{
+    color: white;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+    padding-right: 22px;
+    
+    align-items: center;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;   
+    margin-top: 0px;
+   
+    
+}
+.songInfo{
+    position:absolute;
+    left: 8vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+    margin-right: 10px;
+}
+
